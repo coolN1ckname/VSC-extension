@@ -1,0 +1,80 @@
+body {
+    background-color: #f6f8fa;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #0366d6;
+    text-decoration: underline;
+}
+
+pre {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+pre:hover {
+    transform: scale(1.02);
+}
+
+blockquote {
+    border-left: 4px solid #ccc;
+    padding-left: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+.alert {
+  background-color: #ffeb3b; 
+  border: 1px solid #ffc107;
+  padding: 10px;
+  color: #000; 
+  font-weight: bold;
+}
+
+.spoiler {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333; 
+}
+
+.spoiler details {
+  background-color: #e0e0e0;
+  padding: 5px;
+  color: #222; 
+}
+
+.spoiler summary {
+  font-weight: bold;
+  color: #0366d6; 
+}
+
+
+.spoiler details {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.spoiler details[open] {
+  opacity: 1;
+}
+
+.spoiler details:not([open]) {
+  animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+
+  
+  
+  
