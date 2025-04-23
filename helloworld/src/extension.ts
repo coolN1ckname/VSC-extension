@@ -11,7 +11,7 @@ export function activate(context: vscode.ExtensionContext) {
   return {
     extendMarkdownIt(md: any) {
 
-      console.log('Markdown-It расширяется!');
+      console.log('Markdown-It активно');
       // Поддержка кастомного синтаксиса для алёрта
       md.use(markdownItContainer, 'alert', {
         validate: () => true,
@@ -40,5 +40,5 @@ export function activate(context: vscode.ExtensionContext) {
 }
 
 export function deactivate() {
-  console.log('Расширение деактивировано.');
+  console.log('Выкл');
 }
